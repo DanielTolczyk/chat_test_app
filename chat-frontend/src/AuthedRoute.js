@@ -23,3 +23,5 @@ const AuthedRoute = ({ component: Component, loading, ...rest }) => {
     />
   );
 };
+
+export default AuthedRoute;

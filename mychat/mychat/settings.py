@@ -17,12 +17,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STREAM_API_KEY = '7n3nvwp36btr'	 # https://getstream.io/dashboard/
-STREAM_API_SECRET = '8kukk928naced3ueck247uccwthgv2kzrkqvfzxz7xbu3hbf2bum97uvxztzdmwp'	
+STREAM_API_KEY = 'wsmv73rq7u6d'	 # https://getstream.io/dashboard/
+STREAM_API_SECRET = 'k2cyettm9uxws4mwc7y7pgfb22ctdfcpmgrsfyxfvx9ns3bdw7ytmcfwsnxunbmn'	
 
 DJOSER = {
     'SERIALIZERS': {
-        'token': 'auth.serializers.StreamTokenSerializer',
+        'token': 'chat.serializers.StreamTokenSerializer',
     }
 }
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+    'chat',
     
 ]
 

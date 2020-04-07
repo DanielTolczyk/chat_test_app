@@ -14,15 +14,16 @@ import "stream-chat-react/dist/css/index.css";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.client = new StreamChat("7n3nvwp36btr");
+    this.client = new StreamChat('wsmv73rq7u6d');
 
     this.client.setUser(
       {
-        id: "cool-sky-9",
-        name: "Cool Sky",
+        id: "daniel.tolczyk@gmail.com",
+        name: "daniel",
         image: "https://getstream.io/random_svg/?id=cool-sky-9&name=Cool+sky"
       },
-      localStorage.getItem("token")
+      localStorage.getItem("token"),
+      console.log(localStorage.getItem("token"))
     );
 
     this.channel = this.client.channel("messaging", "godevs", {
@@ -46,3 +47,6 @@ class App extends Component {
       </Chat>
     );
   }
+}
+
+export default App

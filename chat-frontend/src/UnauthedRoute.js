@@ -2,7 +2,7 @@
 import React from "react";
 import { Redirect, Route } from "react-router-dom";
 
-const AuthedRoute = ({ component: Component, loading, ...rest }) => {
+const UnauthedRoute = ({ component: Component, loading, ...rest }) => {
   const isAuthed = Boolean(localStorage.getItem("token"));
   return (
     <Route
@@ -23,3 +23,5 @@ const AuthedRoute = ({ component: Component, loading, ...rest }) => {
     />
   );
 };
+
+export default UnauthedRoute;
